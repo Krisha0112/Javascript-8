@@ -1,0 +1,44 @@
+<!-- 6.Write a JavaScript program to input marks of five subjects Physics, Chemistry, Biology, Mathematics and Computer. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 6</title>
+</head>
+<body>
+
+    <script>
+
+        var sub1 = parseInt(prompt("Enter Physics Marks :-"));
+        var sub2 = parseInt(prompt("Enter Chemistry Marks :-"));
+        var sub3 = parseInt(prompt("Enter Biology Marks :-")); 
+        var sub4 = parseInt(prompt("Enter Mathematics Marks :-"));
+        var sub5 = parseInt(prompt("Enter Computer Marks :-"));
+
+        sum = sub1 + sub2 + sub3 + sub4 + sub5;
+        total = (sum / 500)* 100;
+
+        var grade;
+        if (total >= 90) {
+        document.write(`<h1>total ${(sum / 500)* 100}% grade = 'A'</h1>`);
+        } else if (total >= 80) {
+            document.write(`<h1>total ${(sum / 500)* 100}% grade = 'B'</h1>`);
+        } else if (total >= 70) {
+            document.write(`<h1>total ${(sum / 500)* 100}% grade = 'C'</h1>`);
+        } else if (total >= 60) {
+            document.write(`<h1>total ${(sum / 500)* 100}% grade = 'D'</h1>`);
+        } else if (total >= 50) {
+            document.write(`<h1>total ${(sum / 500)* 100}% grade = 'E'</h1>`);
+        } else if (total >= 40) {
+            document.write(`<h1>total ${(sum / 500)* 100}% grade = 'F'</h1>`);
+        } else {
+            document.write(`<h1>total ${(sum / 500)* 100}% grade = 'Fail'</h1>`);
+        }
+
+       
+    </script>
+    
+</body>
+</html>

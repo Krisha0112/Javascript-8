@@ -1,0 +1,49 @@
+<!-- 11. Write a JavaScript program to create basic calculator using ladder if else. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 11</title>
+</head>
+<body>
+
+    <script>
+
+        var num1 = parseInt(prompt("Enter Num1 :- "));
+        var num2 = parseInt(prompt("Enter Num2 :- "));
+        var choice = parseInt(prompt("Enter Choice :- "));
+        
+        if (choice === '+') 
+        {
+            document.write(`<h1>result = num1 + num2</h1>`);
+        } 
+        else if (choice === '-') 
+        {
+            document.write(`<h1>result = num1 - num2</h1>`);
+        } 
+        else if (choice === '*') 
+        {
+            document.write(`<h1>result = num1 * num2</h1>`);
+        } 
+        else if (choice === '/') 
+        {
+            if (num2 !== 0) 
+            {
+                document.write(`<h1>result = num1 / num2</h1>`);
+            }
+            else 
+            {
+                document.write(`<h1>result = Error: Division by zero is not allowed.</h1>`);
+            }
+        } 
+        else 
+        {
+            document.write(`<h1>result = Invalid choice.</h1>`);
+        }
+
+    </script>
+    
+</body>
+</html>
