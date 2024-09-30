@@ -18,24 +18,25 @@
         var sub5 = parseInt(prompt("Enter Computer Marks :-"));
 
         sum = sub1 + sub2 + sub3 + sub4 + sub5;
-        total = (sum / 500)* 100;
+        total = sum / 5;
 
         var grade;
         if (total >= 90) {
-        document.write(`<h1>total ${(sum / 500)* 100}% grade = 'A'</h1>`);
+        document.write(`<h1>Total :- ${total + '%'} <br> grade = 'A'</h1>`);
         } else if (total >= 80) {
-            document.write(`<h1>total ${(sum / 500)* 100}% grade = 'B'</h1>`);
+            document.write(`<h1>Total :- ${total}% <br> grade = 'B'</h1>`);
         } else if (total >= 70) {
-            document.write(`<h1>total ${(sum / 500)* 100}% grade = 'C'</h1>`);
+            document.write(`<h1>Total :- ${total}% <br> grade = 'C'</h1>`);
         } else if (total >= 60) {
-            document.write(`<h1>total ${(sum / 500)* 100}% grade = 'D'</h1>`);
+            document.write(`<h1>Total :- ${total}% <br> grade = 'D'</h1>`);
         } else if (total >= 50) {
-            document.write(`<h1>total ${(sum / 500)* 100}% grade = 'E'</h1>`);
+            document.write(`<h1>Total :- ${total}% <br> grade = 'E'</h1>`);
         } else if (total >= 40) {
-            document.write(`<h1>total ${(sum / 500)* 100}% grade = 'F'</h1>`);
+            document.write(`<h1>Total :- ${total}% <br> grade = 'F'</h1>`);
         } else {
-            document.write(`<h1>total ${(sum / 500)* 100}% grade = 'Fail'</h1>`);
+            document.write(`<h1>Total :- ${total}%  <br> You are Fail...</h1>`);
         }
+
 
        
     </script>
