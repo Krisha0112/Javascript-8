@@ -1,0 +1,32 @@
+<!-- 8.Write javascript program to print multiplication table of any number using do while loop. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 8</title>
+</head>
+
+<body>
+
+    <script>
+
+        alert(`Print Multiplication Table Of Any Number Using While Loop`);
+
+        var i = 1;
+        var n = parseInt(prompt("Enter n :- "));
+        var limit = 10;
+
+        do {
+            var result = n * i;
+            document.write(`<h2>No :- ${result}</h2>`);
+            i++;
+        } while (i <= limit)
+
+    </script>
+
+</body>
+
+</html>
