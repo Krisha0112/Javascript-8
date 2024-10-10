@@ -1,5 +1,3 @@
-var a,b;
-        
 var a = parseInt(prompt("Enter A:- "));
 var b = parseInt(prompt("Enter B:- "));
 
