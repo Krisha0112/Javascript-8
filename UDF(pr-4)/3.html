@@ -1,0 +1,77 @@
+<!-- 3.Write a JavaScript program to find which number is greter in 4 numbers using nested if else. (using simple function)  -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 3</title>
+</head>
+
+<body>
+
+    <script>
+
+        alert(` which number is greter in 4 numbers using nested if else.`);
+
+        function integer() 
+        {
+            if (a >= b) {
+                if (a >= c) {
+                    if (a >= d) {
+                        if (a >= e) {
+                            document.write(`<h1>A is the greatest</h1>`);
+                        } else {
+                            document.write(`<h1>E is the greatest</h1>`);
+                        }
+                    } else {
+                        document.write(`<h1>D is the greatest</h1>`);
+                    }
+                } else {
+                    if (c >= d) {
+                        if (c >= e) {
+                            document.write(`<h1>C is the greatest</h1>`);
+                        } else {
+                            document.write(`<h1>E is the greatest</h1>`);
+                        }
+                    } else {
+                        document.write(`<h1>D is the greatest</h1>`);
+                    }
+                }
+            } else {
+                if (b >= c) {
+                    if (b >= d) {
+                        if (b >= e) {
+                            documrnt.write(`<h1>B is the greatest</h1>`);
+                        } else {
+                            document.write(`<h1>E is the greatest</h1>`);
+                        }
+                    } else {
+                        document.write(`<h1>D is the greatest</h1>`);
+                    }
+                } else {
+                    if (c >= d) {
+                        if (c >= e) {
+                            document.write(`<h1>C is the greatest</h1>`);
+                        } else {
+                            document.write(`<h1>D is the greatest</h1>`);
+                        }
+                    } else {
+                        document.write(`<h1>E is the greatest</h1>`);
+                    }
+                }
+            }
+        }
+        var a = parseInt(prompt("Enter A :- "));
+        var b = parseInt(prompt("Enter B :- "));
+        var c = parseInt(prompt("Enter C :- "));
+        var d = parseInt(prompt("Enter D :- "));
+        var e = parseInt(prompt("Enter E :- "));
+        integer();
+
+    </script>
+
+</body>
+
+</html>

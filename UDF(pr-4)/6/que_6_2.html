@@ -1,0 +1,38 @@
+<!-- 6.Write a javascript Program to perform a swapping of two variables.(all function use) -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 6_2</title>
+</head>
+<body>
+
+    <script>
+
+        alert(`perform a swapping of two variables`);
+
+        // Take Something Return Nothing
+
+        function swap(a,b)
+        {
+            document.write(`<h1>Before Swapping A :- ${a}</h1>`);
+            document.write(`<h1>Before Swapping B :- ${b}</h1>`);
+
+            var swap = a;
+            a = b;
+            b = swap;
+
+            document.write(`<h1>After Swapping A :- ${a}</h1>`);
+            document.write(`<h1>After Swapping B :- ${b}</h1>`);
+        }
+        var a = parseInt(prompt("Enter A :- "));
+        var b = parseInt(prompt("Enter B :- "));
+
+        swap(a,b);
+
+    </script>
+    
+</body>
+</html>
