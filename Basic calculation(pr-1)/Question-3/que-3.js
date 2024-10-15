@@ -1,3 +1,4 @@
-var c = parseInt(prompt("Enter C:- "));
+var c = parseInt(prompt("Enter The Value Of C :"));
 
-document.write(`<h1>Ans : ${c * 9/5 + 32}</h1>`);
+var ans = c * 9 / 5 + 32;
+document.write(`<h2>${ans}</h2>`);
