@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 8</title>
+</head>
+<body>
+
+    <script type="text/javascript">
+        
+        alert(`all element sum.`);
+
+        var size = parseInt(prompt(`Enter Array Size :-`));
+        const arr = [size];
+        var sum = 0;
+
+        document.write(`<h2>Array Elements</h2>`);
+
+        for (var i = 0; i < size; i++) {
+            arr[i] = parseInt(prompt(`Enter Element ${i + 1} :-`));
+            document.write(`<h4>${arr[i]}</h4>`);
+        }
+        document.write(`<h2>Sum of all Elements....</h2>`);
+        for (var i = 0; i < size; i++) {
+            sum = sum + arr[i];
+        }
+        document.write(`<h4>Sum Of All Elements :- ${sum}</h4>`);
+
+    </script>
+    
+</body>
+</html>

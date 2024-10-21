@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 9</title>
+</head>
+<body>
+
+    <script type="text/javascript">
+
+        alert(`search array element using for loop..`);
+        // static program...        
+
+        // const arr = [10, 20, 30, 40, 50];
+        // let value = 20;
+
+        // for (let i = 0; i < arr.length; i++) {
+        //     if (arr[i] == value) {
+        //         document.write(`<h2>Index of Element :- ${i}</h2>`);
+
+        //     }
+
+        // }
+
+        // dynamic program....
+
+        var size = parseInt(prompt(`Enter Array Size :-`));
+        var arr = [size];
+
+
+        document.write(`<h2>Array Elements</h2>`);
+        for (var i = 0; i < size; i++) {
+            arr[i] = parseInt(prompt(`Enter Element ${i + 1} :-`));
+            document.write(`<h4>${arr[i]}</h4>`);
+        }
+
+        var value = parseInt(prompt(`search array element to find index :-`));
+        var notIndex =0;
+        document.write(`<h2> Element :- ${value}</h2>`);
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] == value) {
+                document.write(`<h2>Index of Element :- ${i}</h2>`);
+                notIndex = 1;
+                break;
+
+            }
+        }
+        if(notIndex ==0){
+            document.write(`<h2> This value is Not Found...</h2>`);
+
+        }
+
+    </script>
+    
+</body>
+</html>

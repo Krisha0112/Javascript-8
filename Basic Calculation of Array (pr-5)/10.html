@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 10</title>
+</head>
+<body>
+
+    <script type="text/javascript">
+        
+        alert(`array ascending  order sort.`);
+
+        var size = parseInt(prompt(`Enter Array Size :-`));
+        var arr = [size];
+
+        document.write(`<h2>Array Elements</h2>`);
+        for (var i = 0; i < size; i++) {
+            arr[i] = parseInt(prompt(`Enter Element ${i + 1} :-`));
+            document.write(`<h4>${arr[i]}</h4>`);
+        }
+        document.write(`<h2>ascending order</h2>`);
+
+        let ans = arr.sort((a, b) => (a - b));
+        document.write(`<h4>${ans}</h4>`);
+        
+    </script>
+    
+</body>
+</html>
