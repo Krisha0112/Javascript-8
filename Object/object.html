@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+</head>
+<body>
+
+    <h2 id="name"></h2>
+    <h2 id="email"></h2>
+    <h2 id="country"></h2>
+    <h2 id="state"></h2>
+    <h2 id="city"></h2>
+    <h2 id="course"></h2>
+    <h2 id="address"></h2>
+    <h2 id="age"></h2>
+    <h2 id="gender"></h2>
+    <h2 id="phone"></h2>
+
+    <table align="center" border="1" cellpadding="10">
+        <thead>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Country</th>
+            <th>State</th>
+            <th>City</th>
+            <th>Course</th>
+            <th>Address</th>
+            <th>Age</th>
+            <th>Gender</th>
+            <th>Phone</th>
+            <th>God</th>
+        </thead>
+        <tbody id="users"></tbody>
+    </table>
+
+    
+</body>
+</html>  
+
+<script>
+
+    const details = [{
+        name : "Krisha",
+        email : "krishamangukiya0112@gmail.com",
+        country : "Bharat",
+        state : "Gujarat",
+        city : "Surat",
+        course : "Full Stack Development",
+        address : "abc Nagar Surat",
+        age : 20,
+        gender : "female",
+        phone : "1234567890",
+        god : [
+            "mahadev","brahma","vishnu","krishna"
+            ]
+    },
+    {
+        name : "Vidhi",
+        email : "vidhi@gmail.com",
+        country : "Bharat",
+        state : "Gujarat",
+        city : "Surat",
+        course : "Full Stack Development",
+        address : "Amroli Surat",
+        age : 23,
+        gender : "female",
+        phone : "34567890",
+        god : [
+            "mahadev","brahma","vishnu","krishna"
+            ]
+    },
+    {
+        name : "Ayushi",
+        email : "ayushi@gmail.com",
+        country : "Bharat",
+        state : "Gujarat",
+        city : "Surat",
+        course : "Full Stack Development",
+        address : "abc Nagar Surat",
+        age : 18,
+        gender : "female",
+        phone : "34567890",
+        god : [
+            "mahadev","brahma","vishnu","krishna"
+            ]
+    }
+]
+
+let tbl = "";
+details.map((val, index)=>{
+    tbl += `
+    <tr>
+        <td>${++index}</td>    
+        <td>${val.name}</td>
+        <td>${val.email}</td>
+        <td>${val.country}</td>
+        <td>${val.state}</td>
+        <td>${val.city}</td>
+        <td>${val.course}</td>
+        <td>${val.address}</td>
+        <td>${val.age}</td>
+        <td>${val.gender}</td>
+        <td>${val.phone}</td>
+        <td>
+            <table border="1" cellpadding="5">`
+                val.god.map((g,i)=>{
+                tbl += `
+                    <tr>
+                        <td>${++i}</td>
+                        <td>${g}</td>
+                    </tr>
+                    `
+                })
+                tbl += ` </table>
+        </td>
+    </tr>`
+})
+document.getElementById("users").innerHTML = tbl;
+
+</script>
