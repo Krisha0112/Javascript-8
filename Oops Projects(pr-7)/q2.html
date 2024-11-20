@@ -1,0 +1,57 @@
+<!-- Write a JavaScript program that creates a class called "BankAccount" with properties for account number and balance. Include methods to deposit and withdraw money from the account. Create some instances of the "BankAccount" class, deposit some money, and withdraw a portion of it. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 2</title>
+</head>
+
+<body>
+
+    <script type="text/javascript">
+
+        class BankAccount {
+            constructor(accno, bal) {
+                this.accno = accno;
+                this.bal = bal;
+            }
+            display() {
+                document.write(`<h2>Account Number:- ${this.accno}<h2>`);
+                document.write(`<h2>Balance:- ${this.bal}<h2>`);
+                // document.write(`<h2>Account Number:- 212121212<h2>`);
+                // document.write(`<h2>Balance:- 1000</h2>`)
+            }
+            deposite(amt) {
+                let total = this.bal += amt;
+                document.write(`<h2>Successfully deposit</h2>`);
+                this.showBalance();
+            }
+            withdraw(amt) {
+                if (this.bal >= amt) {
+                    let total = this.bal -= amt;
+                    document.write(`<h2>Successfully withdraw<h2>`);
+                    this.showBalance();
+                }
+                else {
+                    document.write(`<h2>Insufficient balance<h2>`);
+                }
+            }
+            showBalance() {
+                document.write(`<h2>Total Balance :- ${this.bal}<h2>`);
+            }
+        }
+
+        let bank = new BankAccount(212121212, 500);
+        bank.display();
+        bank.deposite(500);
+        bank.withdraw(400);
+
+    </script>
+
+
+</body>
+
+</html>
